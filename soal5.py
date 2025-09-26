@@ -1,16 +1,16 @@
-
-# ? Buatlah program untuk menghitung
-# ! jumlah huruf vokal di dalam sebuah kata
-user = input("Masukkan sebuah kata: ").lower() # ! ubah ke huruf kecil
-huruf = []
-vokal = ["a", "i", "u", "e", "o"] # ! daftar huruf vokal
-for y in user : # ! masukkan ke dalam list
-# ? y = b 
-# ? y = a TRUE
-# ? y = d
-# ? y = a TRUE
-# ? y = k
-    if y in vokal:
-        huruf.append(y)
-jumVokal = len(huruf) # ! hitung jumlah huruf vokal
-print(f"Jumlah huruf vokal pada kata {user} adalah {jumVokal}")
+i = 1
+total = 0
+grade = ""
+while i <= 3 :
+    user = int(input(f"Masukkan nilai ke-{i} : "))
+    total += user
+    i += 1
+rata2 = total / 3
+if rata2 > 92 :
+    grade = "A"
+elif rata2 > 80 :
+    grade = "B"
+elif rata2 > 70 :
+    grade = "C"
+else : grade = "D"
+print(f"nilai rata-ratamu adalah {rata2} dengan grade {grade}")
